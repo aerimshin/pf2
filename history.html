@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORY</title>
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">s
+    <link href="css/about.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function(){
+            // scroll year changer            
+            var scrollTop = $(window).scrollTop()
+            $(window).scroll(function(){
+                scrollTop = $(window).scrollTop()
+                for(var i= 0 ; i<12; i++){
+                    if(scrollTop > $('.right_wrap>.year').eq(i).offset().top){
+                         $('.left>h4').text(2021-i)
+                    }
+                }
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <? include("header.html");?>
+    <section id="banner">
+        <h2>COMPANY HISTORY</h2>
+    </section>
+    <ul class="root">
+        <li><a href="index.html"><img src="img/home.png" alt="홈으로 돌아가기"></a></li>
+        <li>ABOUT</li>
+        <li>COMPANY HISTORY</li>
+    </ul>
+    <section id="int">
+        <h2>스튜디오 드래곤의 새로운 시도와<br> 성취를 소개합니다.</h2>
+    </section>
+    <section id="year">
+        <div class="left">
+            <h3><img src="img/sticky.png" alt="studio dragon"></h3>
+            <h4>2021</h4><!-- 2021 start 2010end-->
+        </div>
+       
+        <div class="right">
+            <div class="v_line"></div>
+            <ul class="right_wrap">
+                <li class="2021 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">6월</b>
+                            <ul class="text_box">
+                                <li>스튜디오드래곤 X 스카이댄스 X 애플TV플러스 &lt;The Big Door Prize&gt; 공동기획-제작 계약 체결</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2020 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">12월</b>
+                            <img src="img/history9.jpg" alt="<사이코지만 괜찮아>포스터" class="poter">
+                            <ul class="text_box">
+                                <li>&lt;사이코지만 괜찮아&gt; ‘The Best International Shows of 2020’ 선정</li>
+                                <li>&lt;사랑의 불시착&gt; 美 Variety Best International TV Series of 2020 선정</li>
+                                <li>&lt;사랑의 불시착&gt;, &lt;방법&gt; 싱가포르 Asian Academy Creative Awards(AACA) Best<br>Drama Series부문, Best Original Screenplay부문 각각 수상</li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <b class="month">11월</b>
+                            <ul class="text_box">
+                                <li>넷플릭스 오리지널 시리즈 &lt;나 홀로 그대&gt; SF어워드 영상부문 우수상 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">10월</b>
+                            <ul class="text_box">
+                                <li>'2020 한국IR대상' 최우수상 수상</li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <b class="month">9월</b>
+                            <img src="img/history8.jpg" alt="<호텔 델루나>포스터" class="poter">
+                            <ul class="text_box">
+                                <li>&lt;호텔 델루나&gt; 2020 방송통신위원회 방송대상 우수상 수상</li>
+                                <li>&lt;사랑의 불시착&gt; 2020 서울드라마어워즈 한류드라마 부문 우수상 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">4월</b>
+                            <ul class="text_box">
+                                <li>스튜디오드래곤 X 스카이댄스 &lt;호텔 델루나&gt; TV시리즈 공동기획-제작 계약 체결</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">2월</b>
+                            <img src="img/history7.jpg" alt="<사랑의 불시착>포스터" class="poter">
+                            <ul >
+                                <li>&lt;사랑의 불시착&gt;최종화 시청률 평균21.7%달성, tvN역대시청률1위</li>
+                            </ul>  
+                        </li>
+                    </ul>
+                </li>
+                <li class="2019 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">12월</b>
+                            <ul class="text_box">
+                                <li>&lt;60일, 지정생존자&gt;  싱가포르 AACA ‘Best Adaptation of an Existing Format’ 부문 수상</li>
+                                <li>송재정 작가 소속 ‘메리카우’ 지분 인수</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">11월</b>
+                            <ul class="text_box">
+                                <li>&lt;검색어를 입력하세요 WWW&gt;  YWCA가 뽑은 좋은 TV 프로그램상 대상</li>
+                                <li>2019 미디어경영대상 CEO 리더십상 최진희 대표 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">10월</b>
+                            <ul class="text_box">
+                                <li>2019 한국IR 대상 우수상 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">9월</b>
+                            <ul class="text_box">
+                                <li>영화 제작사 ‘무비락’ 지분 인수</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">5월</b>
+                            <ul class="text_box">
+                                <li>&lt;나의 아저씨&gt;  백상예술대상 드라마 작품상 수상</li>
+                                <li>&lt;미스터 션샤인&gt;  방송통신위원회 방송대상 우수상 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">4월</b>
+                            <ul class="text_box">
+                                <li>노희경 작가 소속 ‘지티스트’ 인수</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2018 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">12월</b>
+                            <img src="img/history6.jpg" alt="<미스터 선샤인>포스터" class="poter">
+                            <ul class="text_box">
+                                <li>&lt;미스터 션샤인&gt; 2018 시청자가 뽑은 올해의 드라마 선정 외 다수</li>
+                                <li>&lt;나의 아저씨&gt; 한국방송작가상 드라마 부문 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">11월</b>
+                            <ul class="text_box">
+                                <li>&lt;미스터 션샤인&gt; 아시아태평양 스타 어워즈 올해의 드라마상 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">9월</b>
+                            <ul class="text_box">
+                                <li>&lt;마더&gt; 서울 드라마 어워즈 미니시리즈 최우수 작품상 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">5월</b>
+                            <ul class="text_box">
+                                <li>&lt;마더&gt; 백상예술대상 TV부문 작품상 수상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">3월</b>
+                            <ul class="text_box">
+                                <li>&lt;마더&gt; 칸 국제 시리즈 페스티벌 공식 경쟁부문 진출</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2017 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">12월</b>
+                            <ul class="text_box">
+                                <li>&lt;비밀의 숲&gt; 2017 뉴욕타임즈 '국제 TV드라마 TOP 10' 선정</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">11월</b>
+                            <ul class="text_box">
+                                <li>스튜디오드래곤 코스닥 상장</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">10월</b>
+                            <ul class="text_box">
+                                <li>&lt;비밀의숲&gt; 제1회 더 서울어워즈 드라마부문 대상</li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <b class="month">7월</b>
+                            <img src="img/history5.jpg" alt="비밀의 숲포스터" class="poter">
+                            <ul class="text_box">
+                                <li><strong>tvN&lt;비밀의 숲&gt;</strong></li>
+                                <li>시청률 7%달성</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">5월</b>
+                            <ul class="text_box">
+                                <li>&lt;도깨비&gt; 2017 케이블TV 방송대상</li>
+                                <li>OCN &lt;터널&gt; 시청률 7% 달성</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">3월</b>
+                            <ul class="text_box">
+                                <li>&lt;도깨비&gt; 2017 방송통신위원회 방송대상 우수상(창의발전) 외 다수</li>
+                                <li>&lt;시그널&gt; 2017 방송통신위원회 방송대상 우수상(사회문화)</li>
+                                <li>OCN &lt;보이스&gt; 시청률 5% 달성</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2016 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <p>&lt;THE K2&gt; 2016 Korea UHD Award 최우수상</p>
+                            <b class="month">12월</b>
+                            <img src="img/history4.jpg" alt="도깨비 포스터" class="poter">
+                            <strong>tvN &lt;도깨비 &gt;</strong>
+                            <p>시청률 20%달성</p>
+                        </li>
+                        <li>
+                            <b class="month">11월</b>
+                            <ul class="text_box">
+                                <li>&lt;디어 마이 프렌즈&gt;국민 통합우수 문화콘텐츠상외 다수</li>
+                                <li>한-베 공동제작&lt;오늘도 청춘2&gt;현지 최고 시청률10% 달성</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">6월</b>
+                            <ul class="text_box">
+                                <li>&lt;시그널&gt;백상예술대상 TV 드라마 작품상 수상</li>
+                                <li>OCN &lt;38사기동대 &gt; 시청률 6%달성</li> 
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">5월</b>
+                            <ul class="text_box">
+                                <li>5월 스튜디오 드래곤 설립</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">1월</b>
+                            <img src="img/history3.jpg" alt="시그널 포스터" class="poter">
+                            <strong>tvN&lt;시그널&gt;</strong>
+                            <ul class="text_box">
+                                <li>시청률 12%달성</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2015 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">9월</b>
+                            <ul class="text_box">
+                                <li>
+                                    <strong>&lt;미생&gt; 한국방송협회 Seoul International Drama Awards 2015 미니시리즈 최우수작품상 외 다수</strong>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">7월</b>
+                            <img src="img/history2.jpg" alt="오나의 귀신님 포스터" class="poter">
+                            <strong>tvN &lt;오 나의 귀신님 &gt; 시청률 7% 달성</strong>
+                        </li>
+                        <li>
+                            <b class="month">3월</b>
+                            <ul class="text_box">
+                                <li> &lt;미생&gt; 2015 케이블TV 방송대상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">2월</b>
+                            <ul class="text_box">
+                                <li>첫 한-중 공동제작 드라마 방영 &lt;상애천사천년 1&gt; - 현지 최고 시청률 1.240% 달성</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">1월</b>
+                            <ul class="text_box">
+                                <li>&lt;미생&gt;  대한민국 국회 대상 올해의 콘텐츠상</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2014 year">
+                    <ul class="year_wrap">
+                       <li>
+                        <b class="month">12월</b>
+                        <ul class="text_box">
+                            <li> &lt;괜찮아 사랑이야 &gt;  2014 Korea UHD Awards 대한민국 UHD 콘텐츠 대상 외 다수</li>
+                            <li>첫 한-베 공동제작 드라마 방영 &lt;오늘도 청춘1&gt; - 현지 최고 시청률 9% 달성</li>
+                            <li>&lt;미생&gt;  2014 Media Awards 유료방송 콘텐츠 우수상 외 다수</li>
+                        </ul>
+                       </li>
+                       <li>
+                            <b class="month">10월</b>
+                            <img src="img/history1.jpg" alt="미생 포스터" class="poter">
+                            <strong>tvN &lt;미생&gt;</strong>
+                            <ul class="text_box">
+                                <li>시청률 8% 달성</li>
+                                <li>OCN &lt;나쁜녀석들&gt; 시청률 4% 달성</li>
+                            </ul>
+                       </li>
+                    </ul>
+                </li>
+                <li class="2013 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">7월</b>
+                            <ul class="text_box">
+                                <li>&lt;나인 아홉번째 시간여행 &gt; 방송통신심의위원회 이달의 좋은 프로그램상</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2012 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">5월</b>
+                            <ul class="text_box">
+                                <li>&lt;특수사건전담반 TEN&gt; 2012 케이블TV 방송대상</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2011 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <b class="month">12월</b>
+                            <ul class="text_box">
+                                <li> &lt;신의퀴즈2 &gt; 2011 Media Awards 유료방송 콘텐츠 대상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b class="month">1월</b>
+                            <img src="img/history0.jpg" alt="드림하이 cut" class="poter">
+                            <ul class="text_box">
+                                <strong>MBC &lt;로열패밀리&gt;, KBS &lt;드림하이1&gt;</strong>
+                                <li>첫 지상파 드라마 제작</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="2010 year">
+                    <ul class="year_wrap">
+                        <li>
+                            <img src="img/gif01.gif" alt="" class="gif">
+                            <b class="month">3월</b>
+                            <ul class="text_box">
+                                <li>CJ ENM(舊 CJ E&M 주식회사) 드라마사업 본격 추진</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer_top">
+            <ul class="f_nav">
+                <li>법적고지</li>
+                <li>이메일 무단 수집거부</li>
+                <li>사이버 감사실</li>
+                <li>CONTACT US</li>
+                <li>사이트 맵</li>
+                <li>Family Site
+                    <ul class="family_menu">
+                        <li><a href="#">CJ 그룹</a></li>
+                        <li><a href="#">CJ E&M</a></li>
+                        <li><a href="#">문화창고</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_wrap">
+                <h1 class="footer_logo"><a href="index.html"><img src="img/footer_logo.png" alt="studio dragon"></a></h1>
+                <p>서울특별시 마포구 매봉산로 75, 17층 스튜디오 드래곤 주식회사<br>
+                    사업자등록번호 : 747-81-00388<br>
+                    ©2021 Shin Ae Rim  All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show</title>
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="css/sub.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function(){
+            
+            
+            //tabs
+            function tap(index){
+                $('.tabs>li[data-index='+index+']').addClass('select')
+                $('.tabs>li[data-index!='+index+']').removeClass('select')
+                $('.drama_wrap>ul[data-index='+index+']').fadeIn('fast')
+                $('.drama_wrap>ul[data-index!='+index+']').css('display','none')
+            }
+              $('.tabs>li').each(function(index){
+                  $(this).attr('data-index',index)
+                  $(this).click(function(){
+                    tap(index)
+                })
+              })
+              $('.drama_wrap>ul').each(function(index){
+                  $(this).attr('data-index',index)
+              })
+            
+
+            //more btn 6개씩
+            // var moreClickNum = 1
+            // $('.more').click(function(){
+                
+            //     moreClickNum++
+
+            //     if(moreClickNum == 1){
+            //         $('.drama_wrap>ul>li').eq(6).nextUntil('.more_2').css('display','block')
+            //     }
+            //     if(moreClickNum == 2){
+            //         $('.drama_wrap>ul>li').eq(11).nextUntil('.more_3').css('display','block')
+            //     }
+            //     if(moreClickNum == 3){
+            //         $('.drama_wrap>ul>li').eq(17).nextUntil('.more_4').css('display','block')
+            //     }
+            //     if(moreClickNum == 4){
+            //         $('.drama_wrap>ul>li').eq(23).nextAll().css('display','block')
+            //     }
+            //     // if(moreClickNum>3){
+            //     //     $('.more').css('display','none')
+            //     // }
+            //     event.preventDefault()
+                
+            // })
+            
+            
+        })
+    </script>
+</head>
+<body>
+    <? include("header.html");?>
+    <section id="ban">
+        <h2>SHOWS</h2>
+    </section>
+    <section id="duce">
+        <h3>'스튜디오 드래곤'의 작품을 소개합니다.</h3>
+    </section>
+    <section id="drama">
+        <ul class="tabs">
+            <li class="select">전체</li>
+            <li>방영 예정</li>
+            <li>방영중</li>
+            <li>종영</li>
+            <li>OTT</li>
+        </ul>
+        <div class="drama_wrap">
+            <ul class="all select" >
+                <li class="soon" >
+                    <a href="sub.html">
+                    <span>comming<br>soon</span>
+                    <img src="img/show0.jpg" alt="불가살">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>불가살</h3>
+                            <p>연출 장영우</p>
+                            <p>극본 권소라 서재원</p>
+                            <p>출연 이진욱 권나라</p>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="soon">
+                    <a href="sub.html">
+                    <span>comming<br>soon</span>
+                    <img src="img/show1.jpg" alt="배드엔크레이지">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>배드앤크레이지</h3>
+                            <p>연출 유선동</p>
+                            <p>극본 김새봄</p>
+                            <p>출연 이동욱 위하준</p>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <a href="sub.html">
+                    <img src="img/show2.jpg" alt="멜랑꼴리아">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>멜랑꼴리아</h3>
+                            <p>연출 김상협</p>
+                            <p>극본 김지운</p>
+                            <p>출연 임수정 이도현</p>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show3.jpg" alt="어서와 조이">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>어서와 조이</h3>
+                            <p>연출 유동선</p>
+                            <p>극본 이재윤 김소이</p>
+                            <p>출연 옥택연 김혜윤</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show4.jpg" alt="해피니스">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>해피니스</h3>
+                            <p>연출 안길호</p>
+                            <p>극본 한상운</p>
+                            <p>출연 한효주 박형식</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show5.jpg" alt="지리산">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>지리산</h3>
+                            <p>연출 이응복</p>
+                            <p>극본 김은희</p>
+                            <p>출연 전지현 주지훈</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show6.jpg" alt="홈타운">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>홈타운</h3>
+                            <p>연출 박현석</p>
+                            <p>극본 주진</p>
+                            <p>출연 유재명 한예리</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show7.jpg" alt="유미의 세포들">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>유미의 세포들</h3>
+                            <p>연출 이상협</p>
+                            <p>극본 송재정 김윤주 김영란</p>
+                            <p>출연 김고은 안보현</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show8.jpg" alt="하이클라스">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>하이클라스</h3>
+                            <p>연출 최병길</p>
+                            <p>극본 스토리홀릭</p>
+                            <p>출연 조여정 김지수</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show9.jpg" alt="갯마을 차차차">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>갯마을 차차차</h3>
+                            <p>연출 이상협</p>
+                            <p>극본 신하은</p>
+                            <p>출연 신민아 김선호</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show10.jpg" alt="더로드:1의 비극">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>더 로드:1의 비극</h3>
+                            <p>연출 김노원</p>
+                            <p>극본 윤희정</p>
+                            <p>출연 지진희 윤세아</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show11.jpg" alt="킹덤:아신전">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>킹덤:아신전</h3>
+                            <p>연출 김성훈</p>
+                            <p>극본 김은희</p>
+                            <p>출연 전지현 박병은</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show12.jpg" alt="너는 나의 봄">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>너는 나의 봄</h3>
+                            <p>연출 정지현</p>
+                            <p>극본 김미나</p>
+                            <p>출연 서현진 김동욱</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show13.jpg" alt="악마판사">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>악마판사</h3>
+                            <p>연출 최정규</p>
+                            <p>극본 문유석</p>
+                            <p>출연 지성 김민정</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show14.jpg" alt="사랑의 불시착">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>사랑의 불시착</h3>
+                            <p>연출 이정효</p>
+                            <p>극본 박지은</p>
+                            <p>출연 현빈 손예진</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show15.jpg" alt="간 떨어지는 동거">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>간 떨어지는 동거</h3>
+                            <p>연출 남성우</p>
+                            <p>극본 백선우 최보림</p>
+                            <p>출연 장기용 이혜리</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show16.jpg" alt="어느날 우리집 현관으로 멸망이 들어왔다.">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>어느날 우리집 현관으로<br>멸망이 들어왔다</h3>
+                            <p>연출 권영일</p>
+                            <p>극본 임메아리</p>
+                            <p>출연 박보영 서인국</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show17.jpg" alt="마인">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>마인</h3>
+                            <p>연출 이나정</p>
+                            <p>극본 백미경</p>
+                            <p>출연 김서형 이보영</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show18.jpg" alt="당신의 운명을 쓰고 있습니다.">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>당신의 운명을 쓰고 있습니다.</h3>
+                            <p>연출 감병수</p>
+                            <p>극본 은선우</p>
+                            <p>출연 전소니 기도훈</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show19.jpg" alt="나빌레라">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>당신의 운명을 쓰고 있습니다.</h3>
+                            <p>연출 한동화</p>
+                            <p>극본 이은미</p>
+                            <p>출연 송강 박인환</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show20.jpg" alt="호텔델루나">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>호텔델루나</h3>
+                            <p>연출 오충환</p>
+                            <p>극본 홍정은 홍미란</p>
+                            <p>출연 이지은 여진구</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show21.jpg" alt="타임즈">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>타임즈</h3>
+                            <p>연출 윤종호</p>
+                            <p>극본 이세봄 안예진</p>
+                            <p>출연 이서진 이주영</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show22.jpg" alt="빈센조">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>빈센조</h3>
+                            <p>연출 김희원</p>
+                            <p>극본 박재범</p>
+                            <p>출연 송중기 전여빈</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show23.jpg" alt="루카:더 비기닝">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>루카: 더 비기닝</h3>
+                            <p>연출 김홍선 </p>
+                            <p>극본 천성일</p>
+                            <p>출연 김래원 이다희</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_4">
+                    <img src="img/show24.jpg" alt="스위트홈">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>스위트홈</h3>
+                            <p>연출 이응복 장영우</p>
+                            <p>극본 홍소리 김영민</p>
+                            <p>출연 송강 이진욱</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_4">
+                    <img src="img/show25.jpg" alt="철인왕후">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>철인왕후</h3>
+                            <p>연출 윤성식 장양호</p>
+                            <p>극본 박계옥 최아일</p>
+                            <p>출연 신혜선 김정현</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_4">
+                    <img src="img/show26.jpg" alt="여신강림">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>여신강림</h3>
+                            <p>연출 김상협</p>
+                            <p>극본 이시은</p>
+                            <p>출연 문가영 차은우</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_4">
+                    <img src="img/show27.jpg" alt="낮과밤">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>낮과밤</h3>
+                            <p>연출 김정현</p>
+                            <p>극본 신유담</p>
+                            <p>출연 남궁민 김설현</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_4">
+                    <img src="img/show28.jpg" alt="경이로운 소문">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>경이로운 소문</h3>
+                            <p>연출 유선동</p>
+                            <p>극본 여지나</p>
+                            <p>출연 조병규 유준상</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_4">
+                    <img src="img/show29.jpg" alt="스타트업">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>스타트업</h3>
+                            <p>연출 오충환</p>
+                            <p>극본 박혜련</p>
+                            <p>출연 배수지 남주혁</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="soon">
+                <li class="soon">
+                    <span>comming<br>soon</span>
+                    <img src="img/show0.jpg" alt="불가살">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>불가살</h3>
+                            <p>연출 장영우</p>
+                            <p>극본 권소라 서재원</p>
+                            <p>출연 이진욱 권나라</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="soon">
+                    <span>comming<br>soon</span>
+                    <img src="img/show1.jpg" alt="배드엔크레이지">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>배드앤크레이지</h3>
+                            <p>연출 유선동</p>
+                            <p>극본 김새봄</p>
+                            <p>출연 이동욱 위하준</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="on">
+                <li class="soon">
+                    <span>comming<br>soon</span>
+                    <img src="img/show0.jpg" alt="불가살">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>불가살</h3>
+                            <p>연출 장영우</p>
+                            <p>극본 권소라 서재원</p>
+                            <p>출연 이진욱 권나라</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="soon">
+                    <span>comming<br>soon</span>
+                    <img src="img/show1.jpg" alt="배드엔크레이지">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>배드앤크레이지</h3>
+                            <p>연출 유선동</p>
+                            <p>극본 김새봄</p>
+                            <p>출연 이동욱 위하준</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show2.jpg" alt="멜랑꼴리아">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>멜랑꼴리아</h3>
+                            <p>연출 김상협</p>
+                            <p>극본 김지운</p>
+                            <p>출연 임수정 이도현</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show3.jpg" alt="어서와 조이">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>어서와 조이</h3>
+                            <p>연출 유동선</p>
+                            <p>극본 이재윤 김소이</p>
+                            <p>출연 옥택연 김혜윤</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <span>on air</span>
+                    <img src="img/show4.jpg" alt="해피니스">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>해피니스</h3>
+                            <p>연출 안길호</p>
+                            <p>극본 한상운</p>
+                            <p>출연 한효주 박형식</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <span>on air</span>
+                    <img src="img/show5.jpg" alt="지리산">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>지리산</h3>
+                            <p>연출 이응복</p>
+                            <p>극본 김은희</p>
+                            <p>출연 전지현 주지훈</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="end">
+                <li>
+                    <img src="img/show6.jpg" alt="홈타운">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>홈타운</h3>
+                            <p>연출 박현석</p>
+                            <p>극본 주진</p>
+                            <p>출연 유재명 한예리</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/show7.jpg" alt="유미의 세포들">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>유미의 세포들</h3>
+                            <p>연출 이상협</p>
+                            <p>극본 송재정 김윤주 김영란</p>
+                            <p>출연 김고은 안보현</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/show8.jpg" alt="하이클라스">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>하이클라스</h3>
+                            <p>연출 최병길</p>
+                            <p>극본 스토리홀릭</p>
+                            <p>출연 조여정 김지수</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/show9.jpg" alt="갯마을 차차차">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>갯마을 차차차</h3>
+                            <p>연출 이상협</p>
+                            <p>극본 신하은</p>
+                            <p>출연 신민아 김선호</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/show10.jpg" alt="더로드:1의 비극">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>더 로드:1의 비극</h3>
+                            <p>연출 김노원</p>
+                            <p>극본 윤희정</p>
+                            <p>출연 지진희 윤세아</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/show11.jpg" alt="킹덤:아신전">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>킹덤:아신전</h3>
+                            <p>연출 김성훈</p>
+                            <p>극본 김은희</p>
+                            <p>출연 전지현 박병은</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show12.jpg" alt="너는 나의 봄">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>너는 나의 봄</h3>
+                            <p>연출 정지현</p>
+                            <p>극본 김미나</p>
+                            <p>출연 서현진 김동욱</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show13.jpg" alt="악마판사">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>악마판사</h3>
+                            <p>연출 최정규</p>
+                            <p>극본 문유석</p>
+                            <p>출연 지성 김민정</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show14.jpg" alt="사랑의 불시착">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>사랑의 불시착</h3>
+                            <p>연출 이정효</p>
+                            <p>극본 박지은</p>
+                            <p>출연 현빈 손예진</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show15.jpg" alt="간 떨어지는 동거">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>간 떨어지는 동거</h3>
+                            <p>연출 남성우</p>
+                            <p>극본 백선우 최보림</p>
+                            <p>출연 장기용 이혜리</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1"> 
+                    <img src="img/show16.jpg" alt="어느날 우리집 현관으로 멸망이 들어왔다.">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>어느날 우리집 현관으로 멸망이 들어왔다</h3>
+                            <p>연출 권영일</p>
+                            <p>극본 임메아리</p>
+                            <p>출연 박보영 서인국</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show17.jpg" alt="마인">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>마인</h3>
+                            <p>연출 이나정</p>
+                            <p>극본 백미경</p>
+                            <p>출연 김서형 이보영</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show18.jpg" alt="당신의 운명을 쓰고 있습니다.">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>당신의 운명을 쓰고 있습니다.</h3>
+                            <p>연출 감병수</p>
+                            <p>극본 은선우</p>
+                            <p>출연 전소니 기도훈</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show19.jpg" alt="나빌레라">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>당신의 운명을 쓰고 있습니다.</h3>
+                            <p>연출 한동화</p>
+                            <p>극본 이은미</p>
+                            <p>출연 송강 박인환</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show20.jpg" alt="호텔델루나">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>호텔델루나</h3>
+                            <p>연출 오충환</p>
+                            <p>극본 홍정은 홍미란</p>
+                            <p>출연 이지은 여진구</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show21.jpg" alt="타임즈">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>타임즈</h3>
+                            <p>연출 윤종호</p>
+                            <p>극본 이세봄 안예진</p>
+                            <p>출연 이서진 이주영</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show22.jpg" alt="빈센조">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>빈센조</h3>
+                            <p>연출 김희원</p>
+                            <p>극본 박재범</p>
+                            <p>출연 송중기 전여빈</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_2">
+                    <img src="img/show23.jpg" alt="루카:더 비기닝">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>루카: 더 비기닝</h3>
+                            <p>연출 김홍선 </p>
+                            <p>극본 천성일</p>
+                            <p>출연 김래원 이다희</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show24.jpg" alt="스위트홈">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>스위트홈</h3>
+                            <p>연출 이응복 장영우</p>
+                            <p>극본 홍소리 김영민</p>
+                            <p>출연 송강 이진욱</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show25.jpg" alt="철인왕후">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>철인왕후</h3>
+                            <p>연출 윤성식 장양호</p>
+                            <p>극본 박계옥 최아일</p>
+                            <p>출연 신혜선 김정현</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show26.jpg" alt="여신강림">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>여신강림</h3>
+                            <p>연출 김상협</p>
+                            <p>극본 이시은</p>
+                            <p>출연 문가영 차은우</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show27.jpg" alt="낮과밤">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>낮과밤</h3>
+                            <p>연출 김정현</p>
+                            <p>극본 신유담</p>
+                            <p>출연 남궁민 김설현</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show28.jpg" alt="경이로운 소문">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>경이로운 소문</h3>
+                            <p>연출 유선동</p>
+                            <p>극본 여지나</p>
+                            <p>출연 조병규 유준상</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_3">
+                    <img src="img/show29.jpg" alt="스타트업">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>스타트업</h3>
+                            <p>연출 오충환</p>
+                            <p>극본 박혜련</p>
+                            <p>출연 배수지 남주혁</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="ott">
+                <li class="soon">
+                    <span>comming<br>soon</span>
+                    <img src="img/show0.jpg" alt="불가살">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>불가살</h3>
+                            <p>연출 장영우</p>
+                            <p>극본 권소라 서재원</p>
+                            <p>출연 이진욱 권나라</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="soon">
+                    <span>comming<br>soon</span>
+                    <img src="img/show1.jpg" alt="배드엔크레이지">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>배드앤크레이지</h3>
+                            <p>연출 유선동</p>
+                            <p>극본 김새봄</p>
+                            <p>출연 이동욱 위하준</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show2.jpg" alt="멜랑꼴리아">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>멜랑꼴리아</h3>
+                            <p>연출 김상협</p>
+                            <p>극본 김지운</p>
+                            <p>출연 임수정 이도현</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show3.jpg" alt="어서와 조이">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>어서와 조이</h3>
+                            <p>연출 유동선</p>
+                            <p>극본 이재윤 김소이</p>
+                            <p>출연 옥택연 김혜윤</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show4.jpg" alt="해피니스">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>해피니스</h3>
+                            <p>연출 안길호</p>
+                            <p>극본 한상운</p>
+                            <p>출연 한효주 박형식</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>on air</span>
+                    <img src="img/show5.jpg" alt="지리산">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>지리산</h3>
+                            <p>연출 이응복</p>
+                            <p>극본 김은희</p>
+                            <p>출연 전지현 주지훈</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show7.jpg" alt="유미의 세포들">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>유미의 세포들</h3>
+                            <p>연출 이상협</p>
+                            <p>극본 송재정 김윤주 김영란</p>
+                            <p>출연 김고은 안보현</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show11.jpg" alt="킹덤:아신전">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>킹덤:아신전</h3>
+                            <p>연출 김성훈</p>
+                            <p>극본 김은희</p>
+                            <p>출연 전지현 박병은</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="more_1">
+                    <img src="img/show24.jpg" alt="스위트홈">
+                    <div class="over_box">
+                        <div class="text_box">
+                            <h3>스위트홈</h3>
+                            <p>연출 이응복 장영우</p>
+                            <p>극본 홍소리 김영민</p>
+                            <p>출연 송강 이진욱</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="more">MORE</a> -->
+    </section>
+    <footer id="footer">
+        <div class="footer_top">
+            <ul class="f_nav">
+                <li>법적고지</li>
+                <li>이메일 무단 수집거부</li>
+                <li>사이버 감사실</li>
+                <li>CONTACT US</li>
+                <li>사이트 맵</li>
+                <li>Family Site
+                    <ul class="family_menu">
+                        <li><a href="#">CJ 그룹</a></li>
+                        <li><a href="#">CJ E&M</a></li>
+                        <li><a href="#">문화창고</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_wrap">
+                <h1 class="footer_logo"><a href="index.html"><img src="img/footer_logo.png" alt="studio dragon"></a></h1>
+                <p>서울특별시 마포구 매봉산로 75, 17층 스튜디오 드래곤 주식회사<br>
+                    사업자등록번호 : 747-81-00388<br>
+                    ©2021 Shin Ae Rim  All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
